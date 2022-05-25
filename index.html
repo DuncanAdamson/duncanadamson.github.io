@@ -1,49 +1,71 @@
+<!DOCTYPE html>
+<html>
 <head>
   <title>Duncan Adamson</title>
-  </head>
-  <body>
+  <style>
+body {
+  margin: 10px 1px 15px 50px;
+  width: min(900px,90%)
+}
+#titleContact {
+  background-color:lightblue;
+}
+#titleAbout {
+  background-color:lightblue;
+}
+#titleRI {
+  background-color:lightblue;
+}
+#titlePub {
+  background-color:lightblue;
+}
+#titleTalks {
+  background-color:lightblue;
+}
+</style>
+</head>
+<body>
   
 
- <div class="container"><!--Top Level--!>
- 	<div><!--2--!>
-                <h1>Duncan Adamson</h1>
-		<div><!--page header--!>
-                	<p>Postdoctoral researcher at Reykjavik University studying Theoretical Computer Science</p>
-		</div><!-- page header --!>
-	</div><!--2--!>
-		<div id="Contact"> <!-- Contact --!>
-	     		<table>
-			      	<tr>
-	      				<td>
-	      					<div>
-					                <h2>Contact Information</h2>
-						</div>
-						<div> <!--Contact Table --!>
-							<table>
-								<tr>
-                  	  						<td>Address: &nbsp</td>
-			  						<td>Menntavegur 1, IS-102, Reykjavík </td>
-								</tr>
-								<tr>
-	                  						<td>E-mail: &nbsp</td>
-			  						<td><a href="mailto:duncana@ru.is">duncana@ru.is</a></td>
-								</tr>
-				  			</table>
-		  				</div> <!-- Contact Table --!>
-					</td>
-					<td>
-		           			<div>
-		                			<img src="images/facebookphoto.jpg" alt="Photo" height=320px>
-	        		    		</div>
-			    		</td>
-				</tr>
-	    		</table>
-	    	</div><!-- Contact --!>
+<div id=topLevel>
+ <div>
+    <h1>Duncan Adamson</h1>
+	<div>
+		<p>Postdoctoral researcher at Reykjavik University studying Theoretical Computer Scienc</p>
 	</div>
-</div> <!-- Top Level --!>
+</div>
+<div id="Contact">
+	<div>
+		<h2 id="titleContact">Contact Information</h2>
+	</div>
+	<table>
+		<tr>
+			<td>
+				<div>
+					<table>
+						<tr>
+							<td>Address: &nbsp</td>
+							<td>Menntavegur 1, IS-102, Reykjavík </td>
+						</tr>
+						<tr>
+							<td>E-mail: &nbsp</td>
+							<td><a href="mailto:duncana@ru.is">duncana@ru.is</a></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+			<td>
+				<div>
+					<img src="images/facebookphoto.jpg" alt="Photo" height=320px>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+</div>
   
 <div id="About">
-	<h2>About</h2>
+	<h2 id="titleAbout">About</h2>
         <p>
 	I am a postdoctoral researcher at the <a href="http://www.icetcs.ru.is">Icelandic Centre of Excellence in Theoretical Computer Science</a> at Reykjavik University studying distributed colouring problems.
  	Prior to coming to Iceland, I was a postgraduate researcher at the <a href="https://www.liverpool.ac.uk/computer-science/">Department of Computer Science</a>, in the <a href="https://www.liverpool.ac.uk/computer-science/research/algorithms/acto/">algorithms and complexity research group</a>.
@@ -55,7 +77,7 @@
 </div>
   
 <div id="ResearchInterests">
-	<h2>Research Interests</h2>
+	<h2 id=titleRI>Research Interests</h2>
 		<p>
                 	<b>Combinatorics on words:</b>My interest on combinatorics on words has been primarily motivated on representing real world objects within a discrete space.
 			In particular, I am been interested in capturing symmetry on words, such as reflective and, in the multidimensional setting, translational symmetries.
@@ -86,9 +108,9 @@
                 </p>
 </div>
  
-<div class="row" id="Publications">
-	<h2>Publications</h2>
-	A full bib file for all published work can be found <a href="duncan_adamson_bibliography.bib">here</a>.
+<div id="Publications">
+	<h2 id=titlePub>Publications</h2>
+	A full bib file for all published work can be found <a href="duncan_adamson_bibliography.bib">here</a> for ease of citing.
 	<table>
 		<tr>
 			<td><a href="https://dblp.org/pid/251/8661.html">dblp link</a>
@@ -109,14 +131,14 @@
 		<tr>
 			<td>On the Hardness of Energy Minimisation for Crystal Structure Prediction.</td>
 			<td>&nbsp <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-38919-2_48">SOFSEM 2020</a> &nbsp</td>
-			<td><a href="https://content.iospress.com/articles/fundamenta-informaticae/fi2096">Fundamenta Informaticae</a> &nbsp</td>
+			<td>&nbsp <a href="https://content.iospress.com/articles/fundamenta-informaticae/fi2096">Fundamenta Informaticae</a> &nbsp</td>
 			<td><a href="https://arxiv.org/abs/1910.12026">arXiv link</a></td>
 		</tr>
 	</table>
 </div>
 
-<div class="row" id="Talks">
-	<h2>Talks</h2>
+<div id="Talks">
+	<h2 id="titleTalks">Talks</h2>
 	<table>
 		<tr>
 			<td>SAND 2022 &nbsp</td>
