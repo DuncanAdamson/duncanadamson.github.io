@@ -7,20 +7,10 @@ body {
   margin: 10px 1px 15px max(50px, (100% - 900px) / 2);
   width: min(900px,90%)
 }
-#titleContact {
+.sectionTitle {
   background-color:lightblue;
 }
-#titleAbout {
-  background-color:lightblue;
-}
-#titleRI {
-  background-color:lightblue;
-}
-#titlePub {
-  background-color:lightblue;
-}
-#titleTalks {
-  background-color:lightblue;
+.publication {
 }
 </style>
 </head>
@@ -36,7 +26,7 @@ body {
 </div>
 <div id="Contact">
 	<div>
-		<h2 id="titleContact">Contact Information</h2>
+		<h2 id="titleContact" class=sectionTitle>Contact Information</h2>
 	</div>
 	<table>
 		<tr>
@@ -65,7 +55,7 @@ body {
 </div>
   
 <div id="About">
-	<h2 id="titleAbout">About</h2>
+	<h2 id="titleAbout" class=sectionTitle>About</h2>
         <p>
 	I am a postdoctoral researcher at the <a href="http://www.icetcs.ru.is">Icelandic Centre of Excellence in Theoretical Computer Science</a> at Reykjavik University studying distributed colouring problems.
  	Prior to coming to Iceland, I was a postgraduate researcher at the <a href="https://www.liverpool.ac.uk/computer-science/">Department of Computer Science</a>, in the <a href="https://www.liverpool.ac.uk/computer-science/research/algorithms/acto/">algorithms and complexity research group</a>.
@@ -77,7 +67,7 @@ body {
 </div>
   
 <div id="ResearchInterests">
-	<h2 id=titleRI>Research Interests</h2>
+	<h2 id=titleRI class=sectionTitle>Research Interests</h2>
 		<p>
                 	<b>Combinatorics on words:</b>My interest on combinatorics on words has been primarily motivated on representing real world objects within a discrete space.
 			In particular, I am been interested in capturing symmetry on words, such as reflective and, in the multidimensional setting, translational symmetries.
@@ -109,36 +99,43 @@ body {
 </div>
  
 <div id="Publications">
-	<h2 id=titlePub>Publications</h2>
-	A full bib file for all published work can be found <a href="duncan_adamson_bibliography.bib">here</a>.
-	<table>
-		<tr>
-			<td><a href="https://dblp.org/pid/251/8661.html">dblp link</a>
-		</tr>
-		<tr>
-			<td>Ranking Binary Unlabelled Necklaces in Polynomial Time.</td>
-			<td> To appear at DCFS 2022</td>
-		</tr>
-		<tr>
-			<td>Faster exploration of some temporal graphs.</td>
-			<td><a href="https://drops.dagstuhl.de/opus/volltexte/2022/15947/">SAND 2022</a></td>
-		</tr>
-		<tr>
-			<td>Ranking Bracelets in Polynomial Time.</td>
-			<td><a href="https://drops.dagstuhl.de/opus/volltexte/2021/13955/">CPM 2021</a> &nbsp</td>
-			<td><a href="https://arxiv.org/abs/2104.04324">arXiv link</a></td>
-		</tr>
-		<tr>
-			<td>On the Hardness of Energy Minimisation for Crystal Structure Prediction.</td>
-			<td><a href="https://link.springer.com/chapter/10.1007%2F978-3-030-38919-2_48">SOFSEM 2020</a> &nbsp</td>
-			<td><a href="https://content.iospress.com/articles/fundamenta-informaticae/fi2096">Fundamenta Informaticae</a> &nbsp</td>
-			<td><a href="https://arxiv.org/abs/1910.12026">arXiv link</a></td>
-		</tr>
-	</table>
+	<h2 id=titlePub class=sectionTitle>Publications</h2>
+	A full bib file for all published work can be found <a href="duncan_adamson_bibliography.bib">here</a> and my dblp profile found <td><a href="https://dblp.org/pid/251/8661.html">here</a>.
+	<ol>
+		<li>
+			<div class=publication>
+				<b>Ranking Binary Unlabelled Necklaces in Polynomial Time.</b>
+				<p><i>Duncan Adamson</i></p>
+				<p> To Appear at DCFS 2022</p>
+			</div>
+		</li>
+		<li>
+			<div class=publication>
+				<b>Faster exploration of some temporal graphs.</b>
+				<p><i>Duncan Adamson,  Vladimir V. Gusev, Dmitriy Malyshev, Viktor Zamaraev</i></p>
+				<p>Presented at <a href="https://drops.dagstuhl.de/opus/volltexte/2022/15947/">SAND 2022</a></p>
+			</div>
+		</li>
+		<li>
+			<div class=publication>
+				<b>Ranking Bracelets in Polynomial Time.</b>
+				<p><i>Duncan Adamson, Argyrios Deligkas, Vladimir V. Gusev, Igor Potapov</i></p>
+				<p>Presented at <a href="https://drops.dagstuhl.de/opus/volltexte/2021/13955/">CPM 2021</a>. Full version available on <a href="https://arxiv.org/abs/2104.04324">arXiv</a></p>
+			</div>
+		</li>
+		<li>
+			<div class=publication>
+				<b>On the Hardness of Energy Minimisation for Crystal Structure Prediction.</b>
+				<p><i>Duncan Adamson, Argyrios Deligkas, Vladimir V. Gusev, Igor Potapov</i></p>
+				<p>Presented at <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-38919-2_48">SOFSEM 2020</a>, Journal version published in <a href="https://content.iospress.com/articles/fundamenta-informaticae/fi2096">Fundamenta Informaticae</a>.
+				Full version also available on <a href="https://arxiv.org/abs/1910.12026">arXiv</a>.</p>
+			</div>
+		</li>
+	</ol>
 </div>
 
 <div id="Talks">
-	<h2 id="titleTalks">Talks</h2>
+	<h2 id="titleTalks" class=sectionTitle>Talks</h2>
 	<table>
 		<tr>
 			<td>SAND 2022 &nbsp</td>
